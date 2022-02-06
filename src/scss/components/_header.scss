@@ -1,0 +1,238 @@
+.masthead {
+  background-color: $brand;
+  padding: 20px 0;
+  position: relative;
+  z-index: 99;
+
+  .container {
+    position: relative;
+  }
+
+  @include mappy-bp(tablet-vert) {
+    padding-top: 20px;
+
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.header-info {
+  align-items: center;
+  display: flex;
+}
+
+.site-logo {
+  background-image: url(https://res.cloudinary.com/standingdreams/image/upload/sdsite/svg/logo-v2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  text-indent: 10000%;
+  white-space: nowrap;
+  width: 35px;
+
+  @include mappy-bp(tablet-vert) {
+    height: 75px;
+    width: 50px;
+  }
+}
+
+.author-name {
+  align-items: center;
+  display: flex;
+
+  &::before {
+    background-color: #fff;
+    content: "";
+    height: 28px;
+    margin: 0 20px;
+    vertical-align: middle;
+    width: 2px;
+  }
+
+  @include mappy-bp(tablet-vert) {
+    height: 36px;
+  }
+}
+
+.main-nav {
+  display: none;
+
+  @include mappy-bp(tablet-vert) {
+    background-color: transparent;
+    display: block;
+    height: auto;
+    position: static;
+    width: auto;
+
+    ul {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      @include to_em(18px);
+
+      margin-left: 30px;
+      padding: 22px 0;
+      text-transform: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    a {
+      border-bottom: 2px solid transparent;
+      display: block;
+      transition: ease all 0.3s;
+
+      &.selected,
+      &:hover {
+        border-bottom: 2px solid #fff;
+      }
+
+      &:focus {
+        background-color: $color--outline;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  background-color: $text;
+  height: 100%;
+  left: 0;
+  padding-top: 20px;
+  position: fixed;
+  right: 0;
+  top: -200%;
+  transition: ease all 0.5s;
+  width: 100%;
+  z-index: 90;
+
+  li {
+    @include to_em(24px);
+
+    font-weight: $medium;
+    text-transform: uppercase;
+  }
+
+  a {
+    display: block;
+    padding: 12px 5%;
+  }
+
+  @include mappy-bp(max tablet-vert) {
+    .show-nav & {
+      top: 80px;
+    }
+  }
+
+  @include mappy-bp(tablet-vert) {
+    display: none;
+  }
+}
+
+.mobile-social {
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
+
+  &::before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 5%;
+    position: absolute;
+    top: 0;
+    width: 20%;
+  }
+
+  a {
+    color: $brand;
+    padding: 6px 5%;
+  }
+}
+
+#burger {
+  appearance: none;
+  background-color: $brand;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  margin-top: -25px;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transition: ease all 0.3s;
+  width: 50px;
+  z-index: 99;
+
+  .bar,
+  .bars {
+    position: absolute;
+  }
+
+  .bars {
+    height: 16px;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -8px;
+    top: 50%;
+    transition: ease transform 0.3s;
+    width: 20px;
+    will-change: transform;
+  }
+
+  .bar {
+    background: #fff;
+    display: block;
+    height: 2px;
+    transition: transform 0.4s, margin 0.4s, opacity 0.4s, background 0.3s;
+    width: 100%;
+  }
+
+  .bar2 {
+    transform: translateY(7px);
+  }
+
+  .bar3 {
+    transform: translateY(14px);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  .show-nav & {
+    .bars {
+      transform: translateY(7px);
+    }
+
+    .bar1 {
+      transform: rotate(45deg);
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include mappy-bp(tablet-vert) {
+    display: none;
+  }
+}

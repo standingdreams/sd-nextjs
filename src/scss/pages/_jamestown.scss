@@ -1,0 +1,32 @@
+.jamestown {
+  .section-padding {
+    padding-top: 65px;
+
+    @include mappy-bp(tablet-vert) {
+      padding-top: 80px;
+    }
+
+    @include mappy-bp(laptop) {
+      padding-top: 100px;
+    }
+  }
+
+  .masthead {
+    padding: 45px 0 0;
+
+    @include mappy-bp(tablet-vert) {
+      padding: 65px 0 0;
+    }
+  }
+
+  .site-logo {
+    background-image: url(https://res.cloudinary.com/standingdreams/image/upload/sdsite/svg/sd-jamestown.svg);
+    height: 30px;
+    width: 300px;
+    background-position: left center;
+
+    @include mappy-bp(tablet-vert) {
+      height: 58px;
+    }
+  }
+}

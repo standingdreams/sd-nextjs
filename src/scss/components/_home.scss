@@ -1,0 +1,24 @@
+.profile {
+  &__grid-item {
+    ul {
+      margin-top: 0;
+    }
+  }
+}
+
+.profile-item {
+  @include mappy-bp(max 620px) {
+    margin-top: 15%;
+  }
+}
+
+.profile-item__list {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}

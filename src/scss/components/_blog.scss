@@ -1,0 +1,140 @@
+.blog {
+  width: 90%;
+
+  @include mappy-bp(tablet-vert) {
+    margin-bottom: 120px;
+  }
+
+  &__header {
+    margin-bottom: 2em;
+    max-width: 620px;
+  }
+
+  &__date {
+    color: $text;
+    font-size: 18px;
+    padding: 0;
+  }
+
+  &__heading {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.25em;
+  }
+
+  &__content {
+    h2 {
+      color: whitesmoke;
+      font-weight: $bold;
+      margin-top: 65px;
+
+      @include to_em(26px);
+    }
+
+    p {
+      max-width: 620px;
+
+      code {
+        background-color: darken($brand, 15%);
+        border-radius: 0.3em;
+        font-size: 0.9em;
+        padding: 0 5px;
+        white-space: normal;
+      }
+    }
+
+    ul {
+      margin: 0 0 1em;
+    }
+
+    figure {
+      display: block;
+      margin-bottom: 1em;
+
+      @include mappy-bp(tablet-vert) {
+        margin: 1em 0 2em;
+        padding-left: 50px;
+        position: relative;
+
+        &::before {
+          background-color: $text;
+          content: "";
+          display: block;
+          height: 84%;
+          left: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10000%;
+          z-index: 0;
+        }
+      }
+
+      img {
+        display: block;
+        height: auto;
+        width: 100%;
+
+        @include mappy-bp(tablet-vert) {
+          position: relative;
+          width: 680px;
+          z-index: 1;
+        }
+      }
+    }
+
+    hr {
+      margin: 35px 0;
+      max-width: 620px;
+    }
+  }
+
+  &__toc {
+    background-color: $text;
+    border-radius: 8px;
+    display: block;
+    max-width: 620px;
+    padding: 20px;
+
+    p {
+      font-weight: $bold;
+    }
+
+    a {
+      color: whitesmoke;
+      font-weight: $regular;
+
+      &.current {
+        color: white;
+        font-weight: $bold;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .code-toolbar {
+    max-width: 620px;
+  }
+
+  pre {
+    background-color: darken($brand, 15%);
+    border-bottom: 2px solid $text;
+    font-size: 0.9em;
+    margin: 1em 0;
+    max-width: 620px;
+    overflow-x: auto;
+    padding: 20px;
+    position: relative;
+    white-space: pre-wrap;
+  }
+}
