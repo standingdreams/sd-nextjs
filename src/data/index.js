@@ -125,3 +125,43 @@ export const portfolioData = {
     },
   ],
 }
+
+export const filmData = {
+  films: [
+    {
+      filmName: 'Morrison Case Studies: RaceTrac',
+      role: 'Director, Video Editor, Motion Graphic Artist, Designer',
+      projectDescription:
+        'During a website redesign, Morrison explored creating video case studies. I worked as lead animator and video editor for this project. I worked with the creative director and art director to create storyboards and lay out the work in Photoshop. All work was brought into After Effects and animated by myself and a motion graphic designer that I directed.',
+      videoId: 'BAjUpollUS0',
+    },
+    {
+      filmName: 'Morrison Case Studies: MyCelx',
+      role: 'Director, Video Editor, Motion Graphic Artist, Designer',
+      projectDescription:
+        'During a website redesign, Morrison explored creating video case studies. I worked as lead animator and video editor for this project. I worked with the creative director and art director to create storyboards and lay out the work in Photoshop. All work was brought into After Effects and animated by myself and a motion graphic designer that I directed.',
+      videoId: 'a173Fvo9WY4',
+    },
+    {
+      filmName: 'Limitless Webinar Facebook Ad',
+      role: 'Video Editor, Motion Graphic Artist',
+      projectDescription:
+        'I was commissioned by the Limitless team to edit a commercial for their investing workshop. All graphics were create in Photoshop and animated in After Effects.',
+      videoId: 'ptBbYpdNq7Q',
+    },
+    {
+      filmName: 'FIS Logo Reveal',
+      role: 'Video Editor, Motion Graphic Artist',
+      projectDescription:
+        'This is a project that I worked on at The Morrison Agency. FIS wanted a logo reveal for a presentation they were going to be giving. I took the existing logo from Illustrator and used After Effects to animate it.',
+      videoId: 'Lk3Q9Y56J-U',
+    },
+    {
+      filmName: 'Salesloft Engineering Week',
+      role: 'Director, Video Editor, Motion Graphic Artist, Designer',
+      projectDescription:
+        'For Engineering Week at Salesloft, I signed up to build out a Zoom app for our Conversation Intelligence side of the product. It was a fun project but we were not able to get a working demo together due to time constraints. Instead, I mocked up what our vision would be in Figma, exported the pieces to Photoshop and animated them in After Effects. The final product was put together in Premiere with a VoiceOver and video pieces I recorded.',
+      videoId: '80Wnp77M1kc',
+    },
+  ],
+}
