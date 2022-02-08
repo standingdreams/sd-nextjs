@@ -110,9 +110,16 @@
     }
 
     a {
+      border-bottom: 0;
       color: whitesmoke;
       cursor: pointer;
       font-weight: $regular;
+
+      &:hover {
+        border-bottom: 0;
+        text-decoration: underline;
+        color: white;
+      }
 
       &.current {
         color: white;
