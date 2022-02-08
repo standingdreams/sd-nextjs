@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import matter from 'gray-matter'
@@ -51,4 +52,9 @@ export async function getStaticProps({ params }) {
       frontMatter: data,
     },
   }
+}
+
+Posts.propTypes = {
+  source: PropTypes.any,
+  frontMatter: PropTypes.any,
 }
