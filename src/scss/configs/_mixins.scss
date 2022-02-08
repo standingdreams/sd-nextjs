@@ -100,10 +100,6 @@
   }
 }
 
-@mixin to_em($target, $context: $base_font) {
-  font-size: ($target / $context) + 0em;
-}
-
 @mixin transition_all_args($property, $duration, $timing) {
   transition-duration: $duration;
   transition-property: $property;

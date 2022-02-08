@@ -9,7 +9,7 @@ h6 {
 }
 
 h2 {
-  @include to_em(18px);
+  font-size: 0.9em;
   color: $text;
   font-weight: $medium;
   margin: 0;
@@ -28,7 +28,7 @@ h2 {
   }
 
   &-h2 {
-    @include to_em(18px);
+    font-size: 0.9em;
     color: $text;
     font-weight: $medium;
     margin: 0;

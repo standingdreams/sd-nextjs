@@ -8,11 +8,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.0.0",
+    "@mdx-js/react": "^2.0.0",
+    "@next/mdx": "^12.0.10",
+    "gray-matter": "^4.0.3",
     "mappy-breakpoints": "^0.2.3",
     "next": "12.0.10",
+    "next-mdx-remote": "^3.0.8",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.5",
-    "prismjs": "^1.26.0",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
