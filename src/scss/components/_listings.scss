@@ -23,7 +23,7 @@
   }
 
   li {
-    @include to_em(24px);
+    font-size: 1.2em;
 
     margin: 0;
     padding: 0;
@@ -137,7 +137,7 @@
   }
 
   &__name {
-    @include to_em(24px);
+    font-size: 1.2em;
 
     appearance: none;
     color: #fff;
@@ -162,7 +162,7 @@
   }
 
   &__role {
-    @include to_em(18px);
+    font-size: 0.9em;
 
     color: $text;
     font-weight: $medium;
@@ -280,6 +280,10 @@
     opacity: 100%;
     transform: translateY(0);
 
+    a {
+      margin-top: 35px;
+    }
+
     @keyframes slideDownSecond {
       0% {
         opacity: 0%;
@@ -321,6 +325,6 @@
   }
 
   .listings-item__name {
-    @include to_em(36px);
+    font-size: 1.8em;
   }
 }
